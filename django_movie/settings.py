@@ -15,7 +15,7 @@ import os
 
 try:
     from .local_settings import *
-except ImportError:
+except ModuleNotFoundError:
     from .prod_settings import *
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
